@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"dino\startup_stm32f103xb.o"
+"dino\dino.o"
+"dino\main.o"
+"dino\gpio.o"
+"dino\spi.o"
+"dino\stm32f1xx_it.o"
+"dino\stm32f1xx_hal_msp.o"
+"dino\stm32f1xx_hal_gpio_ex.o"
+"dino\stm32f1xx_hal_spi.o"
+"dino\stm32f1xx_hal.o"
+"dino\stm32f1xx_hal_rcc.o"
+"dino\stm32f1xx_hal_rcc_ex.o"
+"dino\stm32f1xx_hal_gpio.o"
+"dino\stm32f1xx_hal_dma.o"
+"dino\stm32f1xx_hal_cortex.o"
+"dino\stm32f1xx_hal_pwr.o"
+"dino\stm32f1xx_hal_flash.o"
+"dino\stm32f1xx_hal_flash_ex.o"
+"dino\stm32f1xx_hal_exti.o"
+"dino\stm32f1xx_hal_tim.o"
+"dino\stm32f1xx_hal_tim_ex.o"
+"dino\system_stm32f1xx.o"
+--strict --scatter "dino\dino.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dino.map" -o dino\dino.axf
