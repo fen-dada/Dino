@@ -3,90 +3,49 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.21.1.0
-Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Ê¿´ó·ò admin, °¢Ë¹¶Ù, LIC=585FJ-U4DHJ-UHN8H-WLC77-HSE4M-XYY9E
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  Fendada nmsl, Apple, LIC=R4HV2-9IX56-8Y0VV-P0Z0G-X9RME-CHGHY
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain:       MDK-ARM Professional  Version: 5.33.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 3 (build 300)
-Assembler:       Armasm.exe V5.06 update 3 (build 300)
-Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
-Library Manager: ArmAr.exe V5.06 update 3 (build 300)
-Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
-CPU DLL:         SARMCM3.DLL V5.21a
-Dialog DLL:      DCM.DLL V1.13.8.0
-Target DLL:      CMSIS_AGDI.dll V1.26.5.0
-Dialog DLL:      TCM.DLL V1.14.14.0
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-F:\stm32\dino\MDK-ARM\dino.uvprojx
-Project File Date:  02/19/2023
+C:\Users\Fendada\32project\Dino\MDK-ARM\dino.uvprojx
+Project File Date:  09/20/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'dino'
-compiling main.c...
-../MDK-ARM/oled.h(63): warning:  #1295-D: Deprecated declaration OLED_ground - give arg types
-  void OLED_ground();
-../MDK-ARM/oled.h(64): warning:  #1295-D: Deprecated declaration OLED_dino - give arg types
-  void OLED_dino();
-../MDK-ARM/oled.h(65): warning:  #1295-D: Deprecated declaration OLED_cloud - give arg types
-  void OLED_cloud();
-../MDK-ARM/oled.h(66): warning:  #1295-D: Deprecated declaration OLED_cactus - give arg types
-  int OLED_cactus();
-../MDK-ARM/oled.h(67): warning:  #1295-D: Deprecated declaration OLED_cover - give arg types
-  void OLED_cover();
-../MDK-ARM/oled.h(69): warning:  #1295-D: Deprecated declaration key_scan - give arg types
-  unsigned char key_scan();
-../MDK-ARM/oled.c(217): warning:  #167-D: argument of type "unsigned int *" is incompatible with parameter of type "int *"
-  				gui_run(&pos,&pos_trg);
-../MDK-ARM/oled.c(217): warning:  #167-D: argument of type "unsigned int *" is incompatible with parameter of type "int *"
-  				gui_run(&pos,&pos_trg);
-../MDK-ARM/oled.c(201): warning:  #177-D: variable "j" was declared but never referenced
-      unsigned int j=0;
-../MDK-ARM/oled.c(202): warning:  #177-D: variable "y" was declared but never referenced
-      unsigned char x,y;
-../MDK-ARM/oled.c(266): warning:  #177-D: variable "s" was declared but never referenced
-  	unsigned char s=0;
-../MDK-ARM/oled.c(413): warning:  #186-D: pointless comparison of unsigned integer with zero
-  				if(speed_idx<0) speed_idx=0;
-../Core/Src/main.c(132): warning:  #223-D: function "memset" declared implicitly
-  				memset(s,'0',sizeof(s));
-../Core/Src/main.c(168): warning:  #68-D: integer conversion resulted in a change of sign
-  		OLED_ShowString(2,-1,"HI:");
-../Core/Src/main.c(169): warning:  #68-D: integer conversion resulted in a change of sign
-  		OLED_ShowString(28,-1,h);
-../Core/Src/main.c(169): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
-  		OLED_ShowString(28,-1,h);
-../Core/Src/main.c(170): warning:  #68-D: integer conversion resulted in a change of sign
-  		OLED_ShowString(80,-1,s);
-../Core/Src/main.c(170): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
-  		OLED_ShowString(80,-1,s);
-../Core/Src/main.c: 18 warnings, 0 errors
-linking...
-Program Size: Code=6232 RO-data=2408 RW-data=2116 ZI-data=1948  
-FromELF: creating hex file...
-"dino\dino.axf" - 0 Error(s), 18 Warning(s).
+"dino\dino.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
-                ARM::CMSIS:CORE:4.3.0
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 4.3.0
+   * Component: CORE Version: 5.4.0
 
 <h2>Collection of Component include folders:</h2>
-  F:\stm32\dino\MDK-ARM\RTE
-  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
-  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  .\RTE\_dino
+  C:\Users\Fendada\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:01
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
